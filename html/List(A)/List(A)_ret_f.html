@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-ComPatible" content="IE=edge" />
+    <meta name="viewPort" content="width=device-width, initial-scale=1.0" />
+    <title>LA Retrieval Function Algorithm</title>
+
+    <style>
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 15%;
+        background-color: #333;
+        position: fixed;
+        height: 100%;
+        overflow: auto;
+      }
+
+      li a {
+        display: block;
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+      }
+
+      li a.active {
+        background-color: red;
+        color: white;
+      }
+
+      li a:hover:not(.active) {
+        background-color: red;
+        color: white;
+      }
+      .img1 {
+        float: left;
+        margin-left: 17%;
+      }
+      #div1 {
+        margin-left: 20%;
+        padding: 16px 16px;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <svg height="120" width="100%">
+      <defs>
+        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stoP
+            offset="0%"
+            style="stop-color: rgb(75, 200, 241); stop-opacity: 1"
+          />
+          <stoP
+            offset="100%"
+            style="stop-color: rgb(255, 255, 255); stop-opacity: 1"
+          />
+        </linearGradient>
+      </defs>
+      <rect fill="url(#grad1)" x="0" y="0" width="100%" height="110" />
+      <text fill="#000000" font-size="50" font-family="Verdana" x="50" y="80">
+        Retrieval Function Algorithm
+      </text>
+      Sorry, your browser does not suPPort inline SVG.
+    </svg>
+
+    <ul>
+      <li>
+        <a href="List(A)_H.html">Home</a>
+      </li>
+      <li>
+        <a href="List(A)_H.S.html">Header, StructureType</a>
+      </li>
+      <li>
+        <a href="List(A)_full,empty_f.html">Full, Empty Function</a>
+      </li>
+      <li>
+        <a href="List(A)_display_f.html">Display Function</a>
+      </li>
+      <li>
+        <a href="List(A)_add,del_f.html">Add, Del Function</a>
+      </li>
+      <li>
+        <a href="#" class="active">Retrieval(Add, Del) Function</a>
+      </li>
+      <li>
+        <a href="List(A)_arraylist_f.html">Arraylist Function</a>
+      </li>
+      <li>
+        <a href="List(A)_M.F.html">Main Function</a>
+      </li>
+      <li>
+        <a href="../../index.html">Main</a>
+      </li>
+    </ul>
+
+    <img
+      src="../../img/List.(A) ret_func.png"
+      alt="List(Array)_Retrieval_function"
+      class="img1"
+    />
+    <p>리스트에 삽입, 삭제, 대체할 위치를 검색하는 검색함수입니다.</p>
+    <p>
+      삽입위치를 검색하는 ret_insert함수는 구조체 포인터변수로 L과 item 값을
+      매개변수로 받아줍니다. <br />
+      length값이 0보다 클때 for문을 돌려주며 for문은 i가 length값보다 작을 때
+      삽입 될 item값과 리스트 i번째에 값을 비교해주며 리스트 i번째가 item값보다
+      클 때 그 때의 i번째가 item이 삽입될 위치이므로 i값을 리턴해줍니다. <br />
+      만약 for문을 빠져나왔다면 맨 끝에 삽입할 위치이므로 i값을 리턴해주게
+      됩니다.
+    </p>
+    <p>
+      삭제와 대체할 위치를 검색하는 ret_del함수는 for문을 i가 0부터 length값보다
+      작을 때 까지 item 값과 리스트의 i번째의 값이 같아질 때 까지<br>반복해줍니다.
+      같은 값이 나왔을 때 그 때의 i값을 리턴해주고 for문을<br>빠져나왔다면 리스트에
+      없는 값이므로 없는 값의 의미로 -1을 리턴해줍니다.
+    </p>
+  </body>
+</html>

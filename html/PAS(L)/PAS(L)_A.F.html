@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PAS_L(Add Function)</title>
+
+    <style>
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 15%;
+        background-color: #333;
+        position: fixed;
+        height: 100%;
+        overflow: visible;
+      }
+
+      li a {
+        display: block;
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+      }
+
+      li a.active {
+        background-color: red;
+        color: white;
+      }
+
+      li a:hover:not(.active) {
+        background-color: red;
+        color: white;
+      }
+      .img1 {
+        float: left;
+        margin-left: 17%;
+      }
+    </style>
+  </head>
+  <body>
+    <svg height="120" width="100%">
+      <defs>
+        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop
+            offset="0%"
+            style="stop-color: rgb(75, 200, 241); stop-opacity: 1"
+          />
+          <stop
+            offset="100%"
+            style="stop-color: rgb(255, 255, 255); stop-opacity: 1"
+          />
+        </linearGradient>
+      </defs>
+      <rect fill="url(#grad1)" x="0" y="0" width="100%" height="110" />
+      <text fill="#000000" font-size="50" font-family="Verdana" x="50" y="80">
+        Addition Function Algorithm
+      </text>
+      Sorry, your browser does not support inline SVG.
+    </svg>
+
+    <ul>
+      <li>
+        <a href="PAS(L)_H.html">Home</a>
+      </li>
+      <li>
+        <a href="PAS(L)_H.S.html">Header, StructureType</a>
+      </li>
+      <li>
+        <a href="#" class="active">Add Function</a>
+      </li>
+      <li>
+        <a href="PAS(L)_S.F.html">Sub Function</a>
+      </li>
+      <li>
+        <a href="PAS(L)_M.F.html">Main Function</a>
+      </li>
+      <li>
+        <a href="../../index.html">Main</a>
+      </li>
+    </ul>
+
+    <img
+      class="img1"
+      src="../../img/PAS.(L) add function.png"
+      alt="add function"
+      height="auto"
+      width="45%"
+    />
+    <p>
+      자기참조구조체를 사용한 덧셈함수입니다. 구조체를 리턴해줄 것이기 때문에
+      리턴타입을 구조체타입으로 선언해줍니다. 구조체포인터변수 p, q, r, r2를
+      선언해주고 r에 메모리를 할당한 후에 r, r2, Z를 같은 위치에 위치시킵니다.
+      여기서 r2는 나중에 다항식 r 즉 다항식 Z에서 위치를 계속 바꿀 변수로
+      사용되게 됩니다.
+    </p>
+    <p>
+      while문은 p가 NULL이거나 q가 NULL일 때 빠져나오게 됩니다. 이 말은 즉
+      다항식 p가 끝까지 탐색했거나 다항식 q가 끝까지 탐색했을 때 빠져나오라는 말
+      입니다.
+    </p>
+    <p>
+      그런다음은 조건식을 따져가며 계산을 하게 되는데요. 여기서 주의 깊게 봐야할
+      점은 연결방식 입니다. 차수비교를 마치고 계수들을 저장하고 난 후 연결을
+      해야하는데요. 여기서 이제 연결을 하기위해 같은 자리에 위치해 있던 r과 r2는
+      r이 앞서나가면 r2는 r의 뒤를 따라가듯이 연결되는 방식입니다. r의 링크에 널
+      값을 주고 r2의 링크에는 r을 주고 r2는 r의 자리를 받고 r은 새로운 노드를
+      생성하여 연결되는 방식입니다.
+    </p>
+    <p>
+      다음으로 주의 깊게 봐야할 점은 while문이 끝나면은 어느 한 쪽이 남게 되는데
+      남은 다항식을 Z다항식 뒤에 붙여 줘야한다는 점입니다. 그렇게 모든 계산이
+      끝나고 나면 다항식 Z를 리턴해주게 됩니다.
+    </p>
+  </body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>List(DL) Search Function Algorithm</title>
+
+    <style>
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 15%;
+        background-color: #333;
+        position: fixed;
+        height: 100%;
+        overflow: auto;
+      }
+
+      li a {
+        display: block;
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+      }
+
+      li a.active {
+        background-color: red;
+        color: white;
+      }
+
+      li a:hover:not(.active) {
+        background-color: red;
+        color: white;
+      }
+      .img1 {
+        float: left;
+        margin-left: 17%;
+      }
+    </style>
+  </head>
+  <body>
+    <svg height="120" width="100%">
+      <defs>
+        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stoP
+            offset="0%"
+            style="stop-color: rgb(75, 200, 241); stop-opacity: 1"
+          />
+          <stoP
+            offset="100%"
+            style="stop-color: rgb(255, 255, 255); stop-opacity: 1"
+          />
+        </linearGradient>
+      </defs>
+      <rect fill="url(#grad1)" x="0" y="0" width="100%" height="110" />
+      <text fill="#000000" font-size="50" font-family="Verdana" x="50" y="80">
+        List(Double Link) Search Function Algorithm
+      </text>
+      Sorry, your browser does not support inline SVG.
+    </svg>
+
+    <ul>
+      <li>
+        <a href="List(DL)_H.html">Home</a>
+      </li>
+      <li>
+        <a href="List(DL)_H.S.html">Header, StructureType</a>
+      </li>
+      <li>
+        <a href="List(DL)_insert_f.html">insert Function</a>
+      </li>
+      <li>
+        <a href="List(DL)_del_f.html">Del Function</a>
+      </li>
+      <li>
+        <a href="#" class="active">Search Function</a>
+      </li>
+      <li>
+        <a href="List(DL)_reverse_f.html">Reverse Function</a>
+      </li>
+      <li>
+        <a href="List(DL)_DL_f.html">Double Link List Function</a>
+      </li>
+      <li>
+        <a href="List(DL)_M.F.html">Main Function</a>
+      </li>
+      <li>
+        <a href="../../index.html">Main</a>
+      </li>
+    </ul>
+
+    <img
+      src="../../img/List.(DL) search_func.png"
+      alt="List(DL)_search_function"
+      class="img1"
+    />
+    <p>리스트에서 검색한 item값을 찾는 함수입니다.</p>
+    <p>
+      리스트를 p로 받아서 p가 null이 아니고 p의 data가 item이 아닐동안 다음
+      리스트로 넘어가며 찾는 방식인데 p가 null일 때 빠져나오면 리스트에 item값이
+      없는 것이고 data값이 item값과 같을 경우 빠져나오면 p의 주소를 리턴해주게
+      됩니다.
+    </p>
+  </body>
+</html>
