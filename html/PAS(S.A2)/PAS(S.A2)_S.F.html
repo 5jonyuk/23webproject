@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PAS2(Sub Function)</title>
+
+    <style>
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 15%;
+        background-color: #333;
+        position: fixed;
+        height: 100%;
+        overflow: visible;
+      }
+
+      li a {
+        display: block;
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+      }
+
+      li a.active {
+        background-color: red;
+        color: white;
+      }
+
+      li a:hover:not(.active) {
+        background-color: red;
+        color: white;
+      }
+      .img1 {
+        float: left;
+        margin-left: 17%;
+      }
+    </style>
+  </head>
+  <body>
+    <svg height="120" width="100%">
+      <defs>
+        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop
+            offset="0%"
+            style="stop-color: rgb(75, 200, 241); stop-opacity: 1"
+          />
+          <stop
+            offset="100%"
+            style="stop-color: rgb(255, 255, 255); stop-opacity: 1"
+          />
+        </linearGradient>
+      </defs>
+      <rect fill="url(#grad1)" x="0" y="0" width="100%" height="110" />
+      <text fill="#000000" font-size="50" font-family="Verdana" x="50" y="80">
+        Subtraction Function Algorithm
+      </text>
+      Sorry, your browser does not support inline SVG.
+    </svg>
+
+    <ul>
+      <li>
+        <a href="PAS(S.A2)_H.html">Home</a>
+      </li>
+      <li>
+        <a href="PAS(S.A2)_H.S.html">Header, StructureType</a>
+      </li>
+      <li>
+        <a href="PAS(S.A2)_A.F.html">Add Function</a>
+      </li>
+      <li>
+        <a href="#" class="active">Sub Function</a>
+      </li>
+      <li>
+        <a href="PAS(S.A2)_M.F.html">Main Function</a>
+      </li>
+      <li>
+        <a href="../../index.html">Main</a>
+      </li>
+    </ul>
+
+    <img
+      class="img1"
+      src="../../img/PAS.(S.A2) sub function1.png"
+      alt="sub function"
+      height="auto"
+      width="45%"
+    />
+    <img
+      class="img1"
+      src="../../img/PAS.(S.A2) sub function2.png"
+      alt="sub function"
+      height="auto"
+      width="45%"
+    />
+    <img
+      class="img1"
+      src="../../img/PAS.(S.A2) sub function3.png"
+      alt="sub function"
+      height="auto"
+      width="45%"
+    />
+
+    <p>
+      뺄셈함수는 덧셈함수와 매우 비슷하나 덧셈함수에서 조금만 변형 해주면 만들
+      수 있습니다.
+    </p>
+    <p>
+      일단 입력부분은 덧셈함수와 동일하고 계산부분에서 살짝 변형이 되는데요. 그
+      변형이 되는 첫번째 부분은 두 다항식의 차수가 같을 때 두 계수를 빼준다는
+      점과 다항식B의 차수가 더 클 때 -부호를 붙여서 저장해준다는 점입니다.
+    </p>
+    <p>
+      두번째 변형부분은 while문을 빠져나왔을 때 B다항식을 C다항식 뒤에
+      붙여야한다면 -부호를 붙여서 저장해줘야한다는 점입니다.
+    </p>
+    <p>
+      출력부분도 덧셈함수와 동일하며 이로써 출력문을 통해 각각의 다항식 값들이
+      출력되게 됩니다.
+    </p>
+  </body>
+</html>

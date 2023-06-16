@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SL_Push, Pop Algorithm</title>
+
+    <style>
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 15%;
+        background-color: #333;
+        position: fixed;
+        height: 100%;
+        overflow: auto;
+      }
+
+      li a {
+        display: block;
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+      }
+
+      li a.active {
+        background-color: red;
+        color: white;
+      }
+
+      li a:hover:not(.active) {
+        background-color: red;
+        color: white;
+      }
+      .img1 {
+        float: left;
+        margin-left: 17%;
+      }
+    </style>
+  </head>
+  <body>
+    <svg height="120" width="100%">
+      <defs>
+        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop
+            offset="0%"
+            style="stop-color: rgb(75, 200, 241); stop-opacity: 1"
+          />
+          <stop
+            offset="100%"
+            style="stop-color: rgb(255, 255, 255); stop-opacity: 1"
+          />
+        </linearGradient>
+      </defs>
+      <rect fill="url(#grad1)" x="0" y="0" width="100%" height="110" />
+      <text fill="#000000" font-size="50" font-family="Verdana" x="50" y="80">
+        Push, Pop Function Algorithm
+      </text>
+      Sorry, your browser does not support inline SVG.
+    </svg>
+
+    <ul>
+      <li>
+        <a href="Stack(L)_H_S.html">Home</a>
+      </li>
+      <li>
+        <a href="Stack(L)_H_S.html">Header, StructureType</a>
+      </li>
+      <li>
+        <a href="#" class="active">Push, Pop Function</a>
+      </li>
+      <li>
+        <a href="Stack(L)_M_F.html">Main Function</a>
+      </li>
+      <li>
+        <a href="../../index.html">Main</a>
+      </li>
+    </ul>
+
+    <img
+      src="../../img/Stack.(L) push_pop_function.png"
+      alt="Stack(Link)_push_pop_function"
+      class="img1"
+    />
+    <p>이 함수는 연결스택에 값을 추가하거나 빼는 push, pop 함수입니다.</p>
+    <p>
+      우선 연결스택에서 push, pop함수들은 리턴을 구조체를 리턴해줄 것이기 때문에
+      함수 리턴타입부분을 구조체로 선언해줍니다.
+    </p>
+    <p>
+      push 함수는 스택의 top주소와 push할 x값을 매개변수로 받아주고 temp를 하나
+      생성하여 메모리를 할당해줍니다. x값을 temp의 item값에 넣어주고 temp의
+      링크를 top과 연결해주고 temp의 주소를 top의 주소로 최신화해줍니다.
+      그런다음 top을 리턴해주면 새로운 값 x가 포함된 연결스택을 리턴해주게
+      됩니다.
+    </p>
+    <p>
+      pop함수는 스택에 값이 없으면 pop할 item이 없기에 빠져나와주고 그렇지
+      않으면 temp를 생성해서 top 같은 곳을 가리키게 하고 top의 아이템값을 data에
+      넣어줍니다. 그리고 top이 가리키는 링크값에 top의 주소를 넘겨주고 temp를
+      삭제시켜줍니다. 다음으로 data값을 출력해주고 top값을 리턴해주어 최신화된
+      연결스택을 넘겨줍니다.
+    </p>
+  </body>
+</html>

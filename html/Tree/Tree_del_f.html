@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tree Del Function Algorithm</title>
+
+    <style>
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 15%;
+        background-color: #333;
+        position: fixed;
+        height: 100%;
+        overflow: auto;
+      }
+
+      li a {
+        display: block;
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+      }
+
+      li a.active {
+        background-color: red;
+        color: white;
+      }
+
+      li a:hover:not(.active) {
+        background-color: red;
+        color: white;
+      }
+      .img1 {
+        float: left;
+        margin-left: 17%;
+      }
+    </style>
+  </head>
+  <body>
+    <svg height="120" width="100%">
+      <defs>
+        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stoP
+            offset="0%"
+            style="stop-color: rgb(75, 200, 241); stop-opacity: 1"
+          />
+          <stoP
+            offset="100%"
+            style="stop-color: rgb(255, 255, 255); stop-opacity: 1"
+          />
+        </linearGradient>
+      </defs>
+      <rect fill="url(#grad1)" x="0" y="0" width="100%" height="110" />
+      <text fill="#000000" font-size="50" font-family="Verdana" x="50" y="80">
+        Tree Del Function Algorithm
+      </text>
+      Sorry, your browser does not support inline SVG.
+    </svg>
+
+    <ul>
+      <li>
+        <a href="Tree_H.html">Home</a>
+      </li>
+      <li>
+        <a href="Tree_H.S.html">Header, StructureType</a>
+      </li>
+      <li>
+        <a href="Tree_insert_f.html">insert Function</a>
+      </li>
+      <li>
+        <a href="Tree_output.html">Output Function</a>
+      </li>
+      <li>
+        <a href="#" class="active">Del Function</a>
+      </li>
+      <li>
+        <a href="Tree_search_f.html">Search Function</a>
+      </li>
+      <li>
+        <a href="Tree_count_f.html">Count Function</a>
+      </li>
+      <li>
+        <a href="Tree_height_f.html">Height Function</a>
+      </li>
+      <li>
+        <a href="Tree_M.F.html">Main Function</a>
+      </li>
+      <li>
+        <a href="../../index.html">Main</a>
+      </li>
+    </ul>
+
+    <img src="../../img/Tree_del_f.png" alt="Tree_dle_function" class="img1" />
+    <p>
+      del 함수는 min_value_node함수를 필요로 합니다. min_value함수는 삭제될
+      노드를 대체할 노드를 찾는 함수로 삭제될 노드의 오른쪽 서브트리에서 가장
+      최솟값을 찾는 함수입니다.
+    </p>
+    <p>
+      다시 del함수로 가서 tree가 null일 경우에는 tree가 빈 트리이거나 삭제할
+      값이 없다는 의미이므로 tree를 리턴해주고 삭제불가 메세지를 출력합니다.
+    </p>
+    <p>
+      tree의 data가 item보다 크다면 tree->llink로 tree의 data가 item보다 작다면
+      tree->rlink로 보내줍니다.
+    </p>
+    <p>
+      이 두가지 경우가 아닌경우에는 item값을 찾은 경우이므로 삭제될 유형을
+      비교해줍니다.
+    </p>
+    <p>
+      tree의 llink가 null일 경우 tree->rlink를 temp에 넣고 tree를 삭제 시킵니다.
+      그리고 temp를 리턴해주어서 트리를 연결해줍니다.
+    </p>
+    <p>
+      tree의 rlink가 null일 경우 tree->llink를 temp에 넣고 tree를 삭제 시킵니다.
+      그리고 temp를 리턴해주어서 트리를 연결해줍니다.
+    </p>
+    <p>
+      tree의 llink와 rlink가 null이 아니라면 이제 min_value_node함수를 이용하여
+      오른쪽 서브트리의 최솟값과 삭제될 노드를 바꿔주고 삭제할 노드를
+      삭제해줍니다.
+    </p>
+  </body>
+</html>

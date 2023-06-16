@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PAS2(Add Function)</title>
+
+    <style>
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 15%;
+        background-color: #333;
+        position: fixed;
+        height: 100%;
+        overflow: visible;
+      }
+
+      li a {
+        display: block;
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+      }
+
+      li a.active {
+        background-color: red;
+        color: white;
+      }
+
+      li a:hover:not(.active) {
+        background-color: red;
+        color: white;
+      }
+      .img1 {
+        float: left;
+        margin-left: 17%;
+      }
+    </style>
+  </head>
+  <body>
+    <svg height="120" width="100%">
+      <defs>
+        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop
+            offset="0%"
+            style="stop-color: rgb(75, 200, 241); stop-opacity: 1"
+          />
+          <stop
+            offset="100%"
+            style="stop-color: rgb(255, 255, 255); stop-opacity: 1"
+          />
+        </linearGradient>
+      </defs>
+      <rect fill="url(#grad1)" x="0" y="0" width="100%" height="110" />
+      <text fill="#000000" font-size="50" font-family="Verdana" x="50" y="80">
+        Addition Function Algorithm
+      </text>
+      Sorry, your browser does not support inline SVG.
+    </svg>
+
+    <ul>
+      <li>
+        <a href="PAS(S.A2)_H.html">Home</a>
+      </li>
+      <li>
+        <a href="PAS(S.A2)_H.S.html">Header, StructureType</a>
+      </li>
+      <li>
+        <a href="#" class="active">Add Function</a>
+      </li>
+      <li>
+        <a href="PAS(S.A2)_S.F.html">Sub Function</a>
+      </li>
+      <li>
+        <a href="PAS(S.A2)_M.F.html">Main Function</a>
+      </li>
+      <li>
+        <a href="../../index.html">Main</a>
+      </li>
+    </ul>
+
+    <img
+      class="img1"
+      src="../../img/PAS.(S.A2) add function1.png"
+      s
+      alt="add function"
+      height="auto"
+      width="45%"
+    />
+    <img
+      class="img1"
+      src="../../img/PAS.(S.A2) add function2.png"
+      alt="add function"
+      height="auto"
+      width="45%"
+    />
+    <img
+      class="img1"
+      src="../../img/PAS.(S.A2) add function3.png"
+      alt="add function"
+      height="auto"
+      width="45%"
+    />
+
+    <p>
+      이 알고리즘은 덧셈함수와 뺄셈함수에서 입력을 받고 계산도하고 출력도 해주는
+      알고리즘입니다.
+    </p>
+    <p>
+      하나의 배열에 한 번에 저장하므로 다항식들의 시작지점이 필요하게 됩니다.
+      그래서 각각의 시작지점을 As, Bs, Cs로 선언해주고 종료지점도 필요하므로
+      Ae와 Be로 선언해줍니다.
+    </p>
+    <p>
+      Ae 는 다항식A의 시작지점에서 A에서 입력받은 만큼을 더한 거에 -1한 값으로
+      나타낼 수 있고 Bs는 A다항식 종료지점에 +1 한 값과 같고 Be는 B의
+      시작지점에서 다항식 B에 입력받은 만큼을 더한 거에 -1한 값으로 나타낼 수
+      있습니다.
+    </p>
+    <p>이렇게 다항식 A,B를 입력받아주고 다항식 C의 시작지점을 정해줍니다.</p>
+    <p>
+      그러고는 while문을 통해 계산해줍니다. while문은 As가 Ae보다 커지거나 Bs가
+      Be 보다 커졌을 때 빠져나오게 됩니다.
+    </p>
+    <p>
+      그런다음은 각각의 조건들에 맞게 계산이 진행될텐데 여기서 주의 깊게 봐야할
+      점은 첫번째 비교 조건식과 while문을 빠져 나왔을 때 입니다.
+    </p>
+    <p>
+      첫번째 비교 조건식을 주의 깊게 봐야하는 이유는 두개의 다항식이 차수가 같고
+      두 값을 더했을 때 같을 경우도 있기 때문에 이 경우에는 계수에 저장하지 않고
+      A,B에 자리를 옮겨주는 것입니다.
+    </p>
+    <p>
+      다음으로 while문을 빠져나왔을 때는 A나 B다항식이 끝났기 때문에
+      빠져나왔으므로 조건식을 줘서 A다항식이 끝났다면 B다항식을 B다항식이
+      끝났다면 A다항식을 C다항식 뒤에 붙여줘야합니다.
+    </p>
+    <p>
+      이로써 계산은 끝나게 되고 각각의 다항식들을 출력문을 통해 출력이 됩니다.
+    </p>
+  </body>
+</html>

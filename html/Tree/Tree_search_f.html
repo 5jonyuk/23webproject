@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tree Search Function Algorithm</title>
+
+    <style>
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 15%;
+        background-color: #333;
+        position: fixed;
+        height: 100%;
+        overflow: auto;
+      }
+
+      li a {
+        display: block;
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+      }
+
+      li a.active {
+        background-color: red;
+        color: white;
+      }
+
+      li a:hover:not(.active) {
+        background-color: red;
+        color: white;
+      }
+      .img1 {
+        float: left;
+        margin-left: 17%;
+        width: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <svg height="120" width="100%">
+      <defs>
+        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop
+            offset="0%"
+            style="stop-color: rgb(75, 200, 241); stop-opacity: 1"
+          />
+          <stop
+            offset="100%"
+            style="stop-color: rgb(255, 255, 255); stop-opacity: 1"
+          />
+        </linearGradient>
+      </defs>
+      <rect fill="url(#grad1)" x="0" y="0" width="100%" height="110" />
+      <text fill="#000000" font-size="50" font-family="Verdana" x="50" y="80">
+        Tree Search Function Algorithm
+      </text>
+      Sorry, your browser does not support inline SVG.
+    </svg>
+
+    <ul>
+      <li>
+        <a href="Tree_H.html">Home</a>
+      </li>
+      <li>
+        <a href="Tree_H.S.html">Header, StructureType</a>
+      </li>
+      <li>
+        <a href="Tree_insert_f.html">insert Function</a>
+      </li>
+      <li>
+        <a href="Tree_output.html">Output Function</a>
+      </li>
+      <li>
+        <a href="Tree_del_f.html">Del Function</a>
+      </li>
+      <li>
+        <a href="#" class="active">Search Function</a>
+      </li>
+      <li>
+        <a href="Tree_count_f.html">Count Function</a>
+      </li>
+      <li>
+        <a href="Tree_height_f.html">Height Function</a>
+      </li>
+      <li>
+        <a href="Tree_M.F.html">Main Function</a>
+      </li>
+      <li>
+        <a href="../../index.html">Main</a>
+      </li>
+    </ul>
+
+    <img
+      src="../../img/Tree_search_f.png"
+      alt="Tree_search_function"
+      class="img1"
+    />
+    <p>이 함수는 트리에서 검색할 값을 찾아주는 함수입니다.</p>
+    <p>tree가 null이라면 값이 트리에 없는 것이고</p>
+    <p>data가 item값과 같다면 tree를 리턴해줍니다.</p>
+    <p>data가 item값보다 크다면 tree->llink로 함수를 재귀호출해주고</p>
+    <p>data가 item값보다 작다면 tree->rlink로 함수를 재귀호출해줍니다.</p>
+  </body>
+</html>

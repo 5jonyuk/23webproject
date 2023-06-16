@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PAS2(Main Function)</title>
+
+    <style>
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 15%;
+        background-color: #333;
+        position: fixed;
+        height: 100%;
+        overflow: visible;
+      }
+
+      li a {
+        display: block;
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+      }
+
+      li a.active {
+        background-color: red;
+        color: white;
+      }
+
+      li a:hover:not(.active) {
+        background-color: red;
+        color: white;
+      }
+      .img1 {
+        float: left;
+        margin-left: 17%;
+      }
+    </style>
+  </head>
+  <body>
+    <svg height="120" width="100%">
+      <defs>
+        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop
+            offset="0%"
+            style="stop-color: rgb(75, 200, 241); stop-opacity: 1"
+          />
+          <stop
+            offset="100%"
+            style="stop-color: rgb(255, 255, 255); stop-opacity: 1"
+          />
+        </linearGradient>
+      </defs>
+      <rect fill="url(#grad1)" x="0" y="0" width="100%" height="110" />
+      <text fill="#000000" font-size="50" font-family="Verdana" x="50" y="80">
+        Main Function Algorithm
+      </text>
+      Sorry, your browser does not support inline SVG.
+    </svg>
+
+    <ul>
+      <li>
+        <a href="PAS(S.A2)_H.html">Home</a>
+      </li>
+      <li>
+        <a href="PAS(S.A2)_H.S.html">Header, StructureType</a>
+      </li>
+      <li>
+        <a href="PAS(S.A2)_A.F.html">Add Function</a>
+      </li>
+      <li>
+        <a href="PAS(S.A2)_S.F.html">Sub Function</a>
+      </li>
+      <li>
+        <a href="#" class="active">Main Function</a>
+      </li>
+      <li>
+        <a href="../../index.html">Main</a>
+      </li>
+    </ul>
+
+    <img
+      class="img1"
+      src="../../img/PAS.(S.A2) main.png"
+      alt="main function"
+      height="auto"
+    />
+
+    <p>
+      메인함수는 매우 간단합니다. 그 이유는 덧셈함수와 뺄셈함수에서 입력도 받고
+      계산도하고 출력도하기 때문입니다. 이렇게 메인함수가 가벼운 코드가
+      좋은코드에 속한다고 볼 수 있습니다.
+    </p>
+    <p>
+      메인 함수에선 다항식을 한꺼번에 저장할 P배열을 넉넉하게 잡아주고 각각
+      함수들을 인수 P를 넘겨주어 호출하게 됩니다.
+    </p>
+  </body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PAS_L(Sub Function)</title>
+
+    <style>
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 15%;
+        background-color: #333;
+        position: fixed;
+        height: 100%;
+        overflow: visible;
+      }
+
+      li a {
+        display: block;
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+      }
+
+      li a.active {
+        background-color: red;
+        color: white;
+      }
+
+      li a:hover:not(.active) {
+        background-color: red;
+        color: white;
+      }
+      .img1 {
+        float: left;
+        margin-left: 17%;
+      }
+    </style>
+  </head>
+  <body>
+    <svg height="120" width="100%">
+      <defs>
+        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop
+            offset="0%"
+            style="stop-color: rgb(75, 200, 241); stop-opacity: 1"
+          />
+          <stop
+            offset="100%"
+            style="stop-color: rgb(255, 255, 255); stop-opacity: 1"
+          />
+        </linearGradient>
+      </defs>
+      <rect fill="url(#grad1)" x="0" y="0" width="100%" height="110" />
+      <text fill="#000000" font-size="50" font-family="Verdana" x="50" y="80">
+        Subtraction Function Algorithm
+      </text>
+      Sorry, your browser does not support inline SVG.
+    </svg>
+
+    <ul>
+      <li>
+        <a href="PAS(L)_H.html">Home</a>
+      </li>
+      <li>
+        <a href="PAS(L)_H.S.html">Header, StructureType</a>
+      </li>
+      <li>
+        <a href="PAS(L)_A.F.html">Add Function</a>
+      </li>
+      <li>
+        <a href="#" class="active">Sub Function</a>
+      </li>
+      <li>
+        <a href="PAS(L)_M.F.html">Main Function</a>
+      </li>
+      <li>
+        <a href="../../index.html">Main</a>
+      </li>
+    </ul>
+
+    <img
+      class="img1"
+      src="../../img/PAS.(L) sub function.png"
+      alt="sub function"
+      height="auto"
+      width="45%"
+    />
+
+    <p>뺄셈함수도 덧셈함수와 비슷하나 몇가지 변형만 해주면 됩니다.</p>
+    <p>
+      앞서배운 다항식덧뺄셈(배열2)와 마찬가지로 q의 차수가 더 클때 -부호를
+      붙여주면 되고 p와 q의 차수가 같을 때는 서로 빼주면 됩니다. 그리고
+      q다항식이 남았을 때도 -부호를 붙여준다면 덧셈함수와 다를 것이 없습니다.
+    </p>
+    <p>
+      알고리즘들은 보시다시피 구현하는 방식만 조금씩 다를 뿐이지 계산하는 방법은
+      다 비슷한 맥락으로 구성되어있습니다.
+    </p>
+  </body>
+</html>
